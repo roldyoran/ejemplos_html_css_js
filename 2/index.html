@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador con JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contador</h1>
+        <div id="counter">0</div>
+        
+        <!-- Nuevo: Campo de entrada para personalizar el incremento/decremento -->
+        <label for="stepValue">Valor de incremento/decremento:</label>
+        <input type="number" id="stepValue" value="1">
+        
+        <br><br>
+        <button id="decrementBtn">Decrementar</button>
+        <button id="incrementBtn">Incrementar</button>
+        
+        <!-- Nuevo: Botón de reset -->
+        <button id="resetBtn">Reiniciar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

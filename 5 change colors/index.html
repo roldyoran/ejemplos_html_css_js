@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Esta es una muestra de personalización de colores</h2>
+    <form name="form1" method="post" action="">Fondo:
+        <select name="fondo">
+            <option value="yellow">Amarillo</option>
+            <option value="white">blanco</option>
+            <option value="Blue">Azul</option>
+        </select>
+        Texto: <select name="texto">
+            <option value="yellow">Amarillo</option>
+            <option value="white">blanco</option>
+            <option value="Blue">Azul</option>
+        </select>
+        <input type="button" name="Button" value="cambiar"
+            onclick="cambColores(parentElement.fondo,parentElement.texto)">
+    </form>
+</body>
+
+</html>
+
+<script>
+    function cambColores(fondos, letras) {
+        let ind;
+        ind = fondos.selectedIndex;
+        document.body.style.backgroundColor = fondos.options[ind].value;
+        ind = letras.selectedIndex;
+        document.body.style.color = letras.options[ind].value;
+        return;
+    }
+</script>
+
+
+
+<style>
+    html {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(194, 194, 194);
+    }
+
+    body {
+        /* Suaviza el cambio de colores */
+        transition: background-color 0.5s, color 0.5s;
+        padding: 50px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+</style>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI Fetch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PokeAPI Viewer</h1>
+        <div id="search-section">
+            <input type="text" id="pokemon-name" placeholder="Introduce el nombre o ID del Pokémon">
+            <button id="fetch-pokemon">Buscar Pokémon</button>
+        </div>
+
+        <!-- Aquí se mostrará la información del Pokémon -->
+        <div id="pokemon-info">
+            <img id="pokemon-image" alt="Imagen del Pokémon">
+            <h2 id="pokemon-name-display"></h2>
+            <p id="pokemon-type"></p>
+            <p id="pokemon-height"></p>
+            <p id="pokemon-weight"></p>
+            <p id="pokemon-experience"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

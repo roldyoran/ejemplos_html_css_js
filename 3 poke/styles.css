@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    color: #ffcb05;
+    font-size: 2em;
+    text-shadow: 2px 2px #2a75bb;
+}
+
+#search-section {
+    margin-bottom: 20px;
+}
+
+#pokemon-name {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: none;
+    background-color: #2a75bb;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1f5a99;
+}
+
+#pokemon-info {
+    margin-top: 20px;
+    opacity: 0;
+    visibility: hidden; /* Oculta el elemento pero mantiene su espacio */
+    transition: opacity 0.6s ease-in-out, visibility 0s 0.6s; /* Transición de visibilidad ocurre después de la opacidad */
+}
+
+#pokemon-info img {
+    width: 150px;
+    height: 150px;
+}
+
+#pokemon-info h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#pokemon-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.hidden {
+    display: none;
+}
+
+#pokemon-info.show {
+    opacity: 1;
+    visibility: visible; /* Hace visible el elemento */
+    transition: opacity 1s ease-in-out, visibility 0s 0s; /* La visibilidad es inmediata cuando está visible */
+}
